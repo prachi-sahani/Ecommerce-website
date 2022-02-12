@@ -26,7 +26,7 @@ input[type="checkbox"] {
 }
 
 input[type="radio"]:checked,
-input[type="checkbox"]:checked {
+input[type="checkbox"]:checked, input[type='range'] {
   accent-color: var(--primary-900);
 }
 

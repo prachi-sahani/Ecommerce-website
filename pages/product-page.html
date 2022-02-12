@@ -47,16 +47,16 @@
 
             <div class="txt txt-bold">Sorting</div>
             <p class="txt radio-input-group">
-                <input type="radio" name="category" value="htl">
-                <label for="category">High to Low</label>
+                <input type="radio" name="sort-category" value="htl">
+                <label for="sort-category">High to Low</label>
             </p>
             <p class="txt radio-input-group">
-                <input type="radio" name="category" value="htl">
-                <label for="category">Low to High</label>
+                <input type="radio" name="sort-category" value="htl">
+                <label for="sort-category">Low to High</label>
             </p>
             <p class="txt radio-input-group">
-                <input type="radio" name="category" value="popularity">
-                <label for="category">Low to High</label>
+                <input type="radio" name="sort-category" value="popularity">
+                <label for="sort-category">Popularity</label>
             </p>
             <br>
             <div class="txt txt-bold">Filters</div>
@@ -90,22 +90,62 @@
                 <label for="category">Gift Hampers</label>
             </p>
 
+            <!-- for future reference - change input to slider
+                <input type="range" step="50" max="1000" min="0" name="weight" value="500"> -->
+
+            <div class="txt txt-bold filter-category">Price(in Rupees)</div>
+            <p class="txt checkbox-input-group">
+                <input type="checkbox" name="price" value="500">
+                <label for="price">0 to 250</label>
+            </p>
+            <p class="txt checkbox-input-group">
+                <input type="checkbox" name="price" value="1000">
+                <label for="price">251 to 500</label>
+            </p>
+            <p class="txt checkbox-input-group">
+                <input type="checkbox" name="price" value="1500">
+                <label for="price">501-750</label>
+            </p>
+            <p class="txt checkbox-input-group">
+                <input type="checkbox" name="price" value="2000">
+                <label for="price">751-1000</label>
+            </p>
+            </p>
+
             <div class="txt txt-bold filter-category">Weight</div>
             <p class="txt checkbox-input-group">
                 <input type="checkbox" name="weight" value="500">
-                <label for="price">500gms</label>
+                <label for="weight">500gms</label>
             </p>
             <p class="txt checkbox-input-group">
                 <input type="checkbox" name="weight" value="1000">
-                <label for="price">1kg</label>
+                <label for="weight">1kg</label>
             </p>
             <p class="txt checkbox-input-group">
                 <input type="checkbox" name="weight" value="1500">
-                <label for="price">1.5kg</label>
+                <label for="weight">1.5kg</label>
             </p>
             <p class="txt checkbox-input-group">
                 <input type="checkbox" name="weight" value="2000">
-                <label for="price">2kg</label>
+                <label for="weight">2kg</label>
+            </p>
+
+            <div class="txt txt-bold filter-category">Rating</div>
+            <p class="txt radio-input-group">
+                <input type="radio" name="rating" value="4">
+                <label for="rating" class="filter-rating-label"> 4 <i class="material-icons filter-rating-icon">star</i> & up </label>
+            </p>
+            <p class="txt radio-input-group">
+                <input type="radio" name="rating" value="3">
+                <label for="rating" class="filter-rating-label"> 2 <i class="material-icons filter-rating-icon">star</i> & up </label>
+            </p>
+            <p class="txt radio-input-group">
+                <input type="radio" name="rating" value="2">
+                <label for="rating" class="filter-rating-label"> 2 <i class="material-icons filter-rating-icon">star</i> & up </label>
+            </p>
+            <p class="txt radio-input-group">
+                <input type="radio" name="rating" value="1">
+                <label for="rating" class="filter-rating-label"> 1 <i class="material-icons filter-rating-icon">star</i> & up </label>
             </p>
         </div>
 
