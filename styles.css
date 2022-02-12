@@ -1,0 +1,99 @@
+/* common styling for all the pages */
+body {
+  width: 100vw;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.logo {
+  height: 7rem;
+}
+
+/* visible for screens below 1050px */
+.nav-list {
+  display: none;
+}
+
+/* visible for screens below 600px */
+.navbar-menu-list {
+  display: none;
+}
+
+.footer {
+  background-color: var(--primary-900);
+  padding: 1rem 1.5rem;
+  color: var(--black-050);
+  text-align: center;
+}
+
+.footer-upper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer-quick-links a,
+.footer-contact-links a {
+  text-decoration: none;
+  color: var(--black-050);
+}
+
+.footer-contact-links .list-item:hover,
+.footer-quick-links .list-item:hover {
+  font-weight: bold;
+}
+
+.footer-contact-links .list-item {
+  display: flex;
+  align-items: center;
+  overflow-wrap: break-word;
+}
+
+.footer-lower {
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 600px) {
+  .footer-upper {
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+  }
+
+  .footer-lower {
+    width: 70%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* styling for extra navbar */
+@media screen and (max-width: 1050px) {
+  .navbar-nav-list {
+    display: none;
+  }
+
+  .nav-list {
+    width: 100%;
+    display: block;
+    background-color: var(--primary-900);
+    color: var(--black-050);
+    text-align: center;
+    cursor: pointer;
+    padding: 1rem;
+  }
+
+  .nav-list .list-item:hover {
+    font-weight: bold;
+  }
+}
