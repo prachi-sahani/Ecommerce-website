@@ -29,6 +29,7 @@
 .hero-text {
   position: absolute;
   display: flex;
+  gap: 1rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -51,7 +52,7 @@
 
 @media screen and (max-width: 600px) {
   .hero-text img {
-    max-width: 70%;
+    max-width: 100%;
     font-size: small;
   }
 
