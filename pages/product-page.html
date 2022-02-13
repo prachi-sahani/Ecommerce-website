@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://rocket-ui.vercel.app/css/main.css" />
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../css/product-page.css">
+    <title>Cakery | Products</title>
+</head>
+
+<body>
+
+    <!-- navigation -->
+    <nav>
+        <div class="navbar">
+            <img class="navbar-brand logo" src="../assets/logo.png" alt="Cakery"></img>
+            <div class="navbar-nav">
+                <ul class="list-group-inline navbar-nav-list">
+                    <li class="list-item"><a href="../index.html">Home</a></li>
+                    <li class="list-item"><a href="./product-page.html">Order Now</a></li>
+                </ul>
+                <div class="navbar-action">
+                    <button class="btn-icon btn-outline-primary material-icons">favorite</button>
+                    <button class="btn-icon btn-outline-primary material-icons">shopping_bag</button>
+                    <button class="btn-icon btn-outline-primary material-icons">account_circle</button>
+                    <button class="btn-basic btn-primary">LOGIN/SIGNUP</button>
+                </div>
+            </div>
+            <div class="navbar-menu">
+                <button class="navbar-menu-btn btn-basic btn-outline-primary material-icons btn-md">menu</button>
+                <ul class="navbar-menu-list list-group-stacked">
+                    <li class="list-item"><a href="./product-page.html">Signup/Login </a></li>
+                    <li class="list-item"><a href="./product-page.html">Account</a></li>
+                    <li class="list-item"><a href="./product-page.html">Shopping Bag</a></li>
+                    <li class="list-item"><a href="./product-page.html">Wishlist</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="product-page ">
+        <div class="filter-section p-4">
+
+            <div class="txt txt-bold">Sorting</div>
+            <p class="txt radio-input-group">
+                <input type="radio" name="sort-category" value="htl">
+                <label for="sort-category">High to Low</label>
+            </p>
+            <p class="txt radio-input-group">
+                <input type="radio" name="sort-category" value="htl">
+                <label for="sort-category">Low to High</label>
+            </p>
+            <p class="txt radio-input-group">
+                <input type="radio" name="sort-category" value="popularity">
+                <label for="sort-category">Popularity</label>
+            </p>
+            <br>
+            <div class="txt txt-bold">Filters</div>
+            <div class="txt txt-bold filter-category">Category</div>
+            <p class="txt checkbox-input-group">
+                <input type="checkbox" name="category" value="cake">
+                <label for="category">Cakes</label>
+            </p>
+            <p class="txt checkbox-input-group">
+                <input type="checkbox" name="category" value="cupcake">
+                <label for="price">Pastries</label>
+            </p>
+            <p class="txt checkbox-input-group">
+                <input type="checkbox" name="category" value="brownie">
+                <label for="price">Brownies</label>
+            </p>
+            <p class="txt checkbox-input-group">
+                <input type="checkbox" name="category" value="chocolate">
+                <label for="category">Chocolates</label>
+            </p>
+            <p class="txt checkbox-input-group">
+                <input type="checkbox" name="category" value="donut">
+                <label for="category">Donuts</label>
+            </p>
+            <p class="txt checkbox-input-group">
+                <input type="checkbox" name="category" value="jarDesert">
+                <label for="category">Jar deserts</label>
+            </p>
+            <p class="txt checkbox-input-group">
+                <input type="checkbox" name="category" value="giftHamper">
+                <label for="category">Gift Hampers</label>
+            </p>
+
+            <!-- for future reference - change input to slider
+                <input type="range" step="50" max="1000" min="0" name="weight" value="500"> -->
+
+            <div class="txt txt-bold filter-category">Price(in Rupees)</div>
+            <p class="txt checkbox-input-group">
+                <input type="checkbox" name="price" value="500">
+                <label for="price">0 to 250</label>
+            </p>
+            <p class="txt checkbox-input-group">
+                <input type="checkbox" name="price" value="1000">
+                <label for="price">251 to 500</label>
+            </p>
+            <p class="txt checkbox-input-group">
+                <input type="checkbox" name="price" value="1500">
+                <label for="price">501-750</label>
+            </p>
+            <p class="txt checkbox-input-group">
+                <input type="checkbox" name="price" value="2000">
+                <label for="price">751-1000</label>
+            </p>
+            </p>
+
+            <div class="txt txt-bold filter-category">Weight</div>
+            <p class="txt checkbox-input-group">
+                <input type="checkbox" name="weight" value="500">
+                <label for="weight">500gms</label>
+            </p>
+            <p class="txt checkbox-input-group">
+                <input type="checkbox" name="weight" value="1000">
+                <label for="weight">1kg</label>
+            </p>
+            <p class="txt checkbox-input-group">
+                <input type="checkbox" name="weight" value="1500">
+                <label for="weight">1.5kg</label>
+            </p>
+            <p class="txt checkbox-input-group">
+                <input type="checkbox" name="weight" value="2000">
+                <label for="weight">2kg</label>
+            </p>
+
+            <div class="txt txt-bold filter-category">Rating</div>
+            <p class="txt radio-input-group">
+                <input type="radio" name="rating" value="4">
+                <label for="rating" class="filter-rating-label"> 4 <i class="material-icons filter-rating-icon">star</i> & up </label>
+            </p>
+            <p class="txt radio-input-group">
+                <input type="radio" name="rating" value="3">
+                <label for="rating" class="filter-rating-label"> 2 <i class="material-icons filter-rating-icon">star</i> & up </label>
+            </p>
+            <p class="txt radio-input-group">
+                <input type="radio" name="rating" value="2">
+                <label for="rating" class="filter-rating-label"> 2 <i class="material-icons filter-rating-icon">star</i> & up </label>
+            </p>
+            <p class="txt radio-input-group">
+                <input type="radio" name="rating" value="1">
+                <label for="rating" class="filter-rating-label"> 1 <i class="material-icons filter-rating-icon">star</i> & up </label>
+            </p>
+        </div>
+
+        <div class="products">
+            <div class="filter-toggle">
+                Filter <i class="material-icons">keyboard_double_arrow_right</i>
+            </div>
+
+            <!-- for future changes -->
+            <!-- <div class="sort-dropdown">
+                <div class="select-dropdown my-3">
+                    <select name="sort-categories" id="sort-categories"  >
+                        <option value="">Sort by: <strong>Recommended</strong></option>
+                        <option value="latest">Latest</option>
+                        <option value="popularity">Popularity</option>
+                        <option value="price-htl">Price - High to Low</option>
+                        <option value="price-lth">Price - Low to High</option>
+                    </select>
+                    <div class="material-icons icon-expand">expand_more</div>
+                </div>
+            </div> -->
+            <div class="filter-tags">
+                <div class="filter-tag-item">Cakes <i class="material-icons filter-tag-remove">clear</i></div>
+                <div class="filter-tag-item">500gms<i class="material-icons filter-tag-remove">clear</i></div>
+                <div class="filter-tag-item">Pineapple<i class="material-icons filter-tag-remove">clear</i></div>
+            </div>
+            
+            <div class="product-list">
+                <div class="product-card card card-w-badge">
+                    <div class="card-image">
+                        <img class="card-img product-image" src="../assets/product-red-velvet-cake.jpg">
+                        <div class="badge badge-bestseller">Bestseller</div>
+                        <div class="product-rating">
+                            4.4<i class="material-icons">star_rate</i>
+                        </div>
+                    </div>
+                   
+                    <div class="card-header">
+                        <div class="card-title product-title">Red Velvet Cake</div>
+                        <i class="card-subtitle wishlist material-icons">favorite_border</i>
+                    </div>
+                    <div class="card-content product-description">
+                            Dreamy creamy red velvet cake with cheese cream & white chocolate garnish on
+                            top is finally here! From its flaky, red velvet crumbs on its sides to its creamy crown,
+                            everything
+                            about this cake is sure to leave you drooling.
+                    </div>
+                    <div class="card-footer">
+                        <div class="action-button product-price-description">
+                            <div class="product-price product-discount-price">
+                                <i class="material-icons">currency_rupee</i>649
+                            </div>
+                            <div class="product-price product-sell-price">
+                                <i class="material-icons">currency_rupee</i><s>699</s>
+                            </div>
+                            <div class="product-price product-discount">
+                                <i class="material-icons">currency_rupee</i>50 off
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card card card-w-badge">
+                    <div class="card-image">
+                        <img class="card-img product-image" src="../assets/product-red-velvet-cake.jpg">
+                        <div class="badge badge-bestseller">Bestseller</div>
+                    
+                        <div class="product-rating">
+                            4.4<i class="material-icons">star_rate</i>
+                        </div>
+                    </div>
+                   
+                    <div class="card-header">
+                        <div class="card-title product-title">Red Velvet Cake</div>
+                        <i class="card-subtitle wishlist material-icons">favorite_border</i>
+                    </div>
+                    <div class="card-content">
+                        <div class="product-description">
+                            Dreamy creamy red velvet cake with cheese cream & white chocolate garnish on
+                            top is finally here! From its flaky, red velvet crumbs on its sides to its creamy crown,
+                            everything
+                            about this cake is sure to leave you drooling.
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="action-button product-price-description">
+                            <div class="product-price product-discount-price">
+                                <i class="material-icons">currency_rupee</i>649
+                            </div>
+                            <div class="product-price product-sell-price">
+                                <i class="material-icons">currency_rupee</i><s>699</s>
+                            </div>
+                            <div class="product-price product-discount">
+                                <i class="material-icons">currency_rupee</i>50 off
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card card card-w-badge">
+                    <div class="card-image">
+                        <img class="card-img product-image" src="../assets/product-red-velvet-cake.jpg">
+                        <div class="badge badge-bestseller">Bestseller</div>
+                    
+                        <div class="product-rating">
+                            4.4<i class="material-icons">star_rate</i>
+                        </div>
+                    </div>
+                   
+                    <div class="card-header">
+                        <div class="card-title product-title">Red Velvet Cake</div>
+                        <i class="card-subtitle wishlist material-icons">favorite_border</i>
+                    </div>
+                    <div class="card-content">
+                        <div class="product-description">
+                            Dreamy creamy red velvet cake with cheese cream & white chocolate garnish on
+                            top is finally here! From its flaky, red velvet crumbs on its sides to its creamy crown,
+                            everything
+                            about this cake is sure to leave you drooling.
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="action-button product-price-description">
+                            <div class="product-price product-discount-price">
+                                <i class="material-icons">currency_rupee</i>649
+                            </div>
+                            <div class="product-price product-sell-price">
+                                <i class="material-icons">currency_rupee</i><s>699</s>
+                            </div>
+                            <div class="product-price product-discount">
+                                <i class="material-icons">currency_rupee</i>50 off
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card card card-w-badge">
+                    <div class="card-image">
+                        <img class="card-img product-image" src="../assets/product-red-velvet-cake.jpg">
+                        <div class="badge badge-bestseller">Bestseller</div>
+                    
+                        <div class="product-rating">
+                            4.4<i class="material-icons">star_rate</i>
+                        </div>
+                    </div>
+                   
+                    <div class="card-header">
+                        <div class="card-title product-title">Red Velvet Cake</div>
+                        <i class="card-subtitle wishlist material-icons">favorite_border</i>
+                    </div>
+                    <div class="card-content">
+                        <div class="product-description">
+                            Dreamy creamy red velvet cake with cheese cream & white chocolate garnish on
+                            top is finally here! From its flaky, red velvet crumbs on its sides to its creamy crown,
+                            everything
+                            about this cake is sure to leave you drooling.
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="action-button product-price-description">
+                            <div class="product-price product-discount-price">
+                                <i class="material-icons">currency_rupee</i>649
+                            </div>
+                            <div class="product-price product-sell-price">
+                                <i class="material-icons">currency_rupee</i><s>699</s>
+                            </div>
+                            <div class="product-price product-discount">
+                                <i class="material-icons">currency_rupee</i>50 off
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card card card-w-badge">
+                    <div class="card-image">
+                        <img class="card-img product-image" src="../assets/product-red-velvet-cake.jpg">
+                        <div class="badge badge-bestseller">Bestseller</div>
+                    
+                        <div class="product-rating">
+                            4.4<i class="material-icons">star_rate</i>
+                        </div>
+                    </div>
+                   
+                    <div class="card-header">
+                        <div class="card-title product-title">Red Velvet Cake</div>
+                        <i class="card-subtitle wishlist material-icons">favorite_border</i>
+                    </div>
+                    <div class="card-content">
+                        <div class="product-description">
+                            Dreamy creamy red velvet cake with cheese cream & white chocolate garnish on
+                            top is finally here! From its flaky, red velvet crumbs on its sides to its creamy crown,
+                            everything
+                            about this cake is sure to leave you drooling.
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="action-button product-price-description">
+                            <div class="product-price product-discount-price">
+                                <i class="material-icons">currency_rupee</i>649
+                            </div>
+                            <div class="product-price product-sell-price">
+                                <i class="material-icons">currency_rupee</i><s>699</s>
+                            </div>
+                            <div class="product-price product-discount">
+                                <i class="material-icons">currency_rupee</i>50 off
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card card card-w-badge">
+                    <div class="card-image">
+                        <img class="card-img product-image" src="../assets/product-red-velvet-cake.jpg">
+                        <div class="badge badge-bestseller">Bestseller</div>
+                    
+                        <div class="product-rating">
+                            4.4<i class="material-icons">star_rate</i>
+                        </div>
+                    </div>
+                   
+                    <div class="card-header">
+                        <div class="card-title product-title">Red Velvet Cake</div>
+                        <i class="card-subtitle wishlist material-icons">favorite_border</i>
+                    </div>
+                    <div class="card-content">
+                        <div class="product-description">
+                            Dreamy creamy red velvet cake with cheese cream & white chocolate garnish on
+                            top is finally here! From its flaky, red velvet crumbs on its sides to its creamy crown,
+                            everything
+                            about this cake is sure to leave you drooling.
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="action-button product-price-description">
+                            <div class="product-price product-discount-price">
+                                <i class="material-icons">currency_rupee</i>649
+                            </div>
+                            <div class="product-price product-sell-price">
+                                <i class="material-icons">currency_rupee</i><s>699</s>
+                            </div>
+                            <div class="product-price product-discount">
+                                <i class="material-icons">currency_rupee</i>50 off
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer mt-4">
+        <div class="footer-upper">
+            <ul class="footer-quick-links list-group txt-left">
+                <h4 class="headings h4">Quick Links</h4>
+                <li class="list-item"><a href="../index.html">Home</a></li>
+                <li class="list-item"><a href="">Cancellation & Refund Policy</a></li>
+                <li class="list-item"><a href="">Terms & Conditions</a></li>
+            </ul>
+            <ul class="footer-contact-links list-group txt-left">
+                <h4 class="headings h4">Get in touch</h4>
+                <li class="list-item"><i class="material-icons txt-bold txt-md pr-2">phone</i><a href="tel:9999999999">(+91)
+                        9999999999</a></li>
+                <li class="list-item"><i class="material-icons pr-2">mail_outline</i><a href="mailto:support@cakery.com">support@cakery.com</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-lower mt-4 txt-sm">
+            &copy; 2022 <strong>The Cakery</strong>. All rights reserved. Designed by <strong>Prachi Sahani</strong>
+        </div>
+    </footer>
+</body>
+
+</html>

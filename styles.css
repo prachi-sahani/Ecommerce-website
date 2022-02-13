@@ -5,6 +5,31 @@ body {
   overflow-x: hidden;
 }
 
+a {
+  color: var(--primary-900);
+  text-decoration: none;
+}
+
+/* common styling for all radio buttons and checkboxes - will include it in component library later on */
+.radio-input-group,
+.checkbox-input-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  height: 0.9rem;
+  width: 0.9rem;
+}
+
+input[type="radio"]:checked,
+input[type="checkbox"]:checked, input[type='range'] {
+  accent-color: var(--primary-900);
+}
+
 nav {
   position: sticky;
   top: 0;
@@ -29,7 +54,7 @@ nav {
 
 .footer {
   background-color: var(--primary-900);
-  padding: 1rem 1.5rem;
+  padding: 1rem;
   color: var(--black-050);
   text-align: center;
 }
@@ -39,23 +64,24 @@ nav {
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
+  overflow-wrap: break-word;
 }
 
 .footer-quick-links a,
 .footer-contact-links a {
-  text-decoration: none;
   color: var(--black-050);
+  overflow-wrap: break-word;
 }
 
-.footer-contact-links .list-item:hover,
-.footer-quick-links .list-item:hover {
+.footer-contact-links .list-item a:hover,
+.footer-quick-links .list-item a:hover {
   font-weight: bold;
 }
 
 .footer-contact-links .list-item {
   display: flex;
   align-items: center;
-  overflow-wrap: break-word;
+  flex-wrap: wrap;
 }
 
 .footer-lower {
@@ -65,7 +91,7 @@ nav {
 @media screen and (max-width: 600px) {
   .footer-upper {
     flex-direction: column;
-    width: 70%;
+    width: 100%;
     margin: auto;
   }
 
@@ -77,23 +103,56 @@ nav {
   }
 }
 
-/* styling for extra navbar */
-@media screen and (max-width: 1050px) {
-  .navbar-nav-list {
-    display: none;
-  }
+/* for future reference */
+/* 
 
-  .nav-list {
-    width: 100%;
-    display: block;
-    background-color: var(--primary-900);
-    color: var(--black-050);
-    text-align: center;
-    cursor: pointer;
-    padding: 1rem;
-  }
-
-  .nav-list .list-item:hover {
-    font-weight: bold;
-  }
+select {
+  border: none;
+  padding: 0.5rem;
+  appearance: none;
+  cursor: pointer;
+  outline: none;
 }
+
+select *{
+  border: none;
+  outline: none;
+  width: 300px;
+  
+}
+
+select option:hover{
+  background-color: var(--primary-900);
+}
+
+option{
+  accent-color: var(--primary-900);
+}
+
+option:hover{
+  outline: none;
+
+  background-color: var(--black-050);
+}
+
+select:focus {
+  outline: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.select-dropdown {
+  display: inline-flex;
+  align-items: center;
+  border: thin solid var(--black-100);
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.icon-expand {
+  padding: 0 0.5rem;
+  color: var(--black-500);
+  font-size: 1.5rem;
+} */
