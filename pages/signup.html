@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://rocket-ui.vercel.app/css/main.css" />
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../css/login_signup.css">
+    <title>The Cakery | Signup</title>
+</head>
+
+<body>
+    <!-- signup page -->
+    <div class="auth-window dialog-window">
+        <button class="btn-icon material-icons btn-close-page">clear</button>
+        <div class="dialog-box">
+            <h2 class="dialog-header heading h2 heading-auth">
+                <a href="../pages/login.html" class="btn-link btn-link-basic login-auth">Login</a> /
+                <a href="/" class="btn-link btn-link-primary signup-auth">Signup</a>
+            </h2>
+            <form class="form-auth my-3 txt-left">
+                <div class="input-group auth-username">
+                    <label class="input-label" for="emailID">Email ID<sup>*</sup></label>
+                    <input class="input-outline w-100" type="email" autocomplete="off" name="emailID"
+                        placeholder="delicious_desserts@email.com" id="emailID" required>
+                </div>
+                <div class="input-group auth-password">
+                    <label class="input-label" for="password">Password<sup>*</sup></label>
+                    <input class="input-outline w-100" type="password" name="password" placeholder="*******"
+                        id="password" required>
+                </div>
+                <div class="input-group auth-password">
+                    <label class="input-label" for="confirm-password">Confirm Password<sup>*</sup></label>
+                    <input class="input-outline w-100" type="password" name="confirm-password" placeholder="*******"
+                        id="confirm-password" required>
+                </div>
+                <p class="txt checkbox-input-group auth-checkbox">
+                    <input type="checkbox" name="subscription" value="subscription" checked>
+                    <label for="subscription">Subscribe to our latest offers</label>
+                </p>
+                <p class="txt checkbox-input-group auth-checkbox">
+                    <input type="checkbox" name="tnc" value="tnc">
+                    <label for="tnc">Agree to terms and conditions<sup>*</sup></label>
+                </p>
+                <button class="btn-basic btn-primary btn-auth my-3">Register</button>
+
+            </form>
+            <div class="card-footer">
+                <div class="action-button">
+                    <a href="" class="btn-link btn-link-basic">FORGOT PASSWORD?</a>
+                </div>
+                <div class="action-icons">
+                    ALREADY REGISTERED? <a href="../pages/login.html"
+                        class="btn-link btn-link-primary txt-bold">LOGIN</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
