@@ -26,7 +26,8 @@ input[type="checkbox"] {
 }
 
 input[type="radio"]:checked,
-input[type="checkbox"]:checked, input[type='range'] {
+input[type="checkbox"]:checked,
+input[type="range"] {
   accent-color: var(--primary-900);
 }
 
@@ -35,7 +36,7 @@ nav {
   top: 0;
   right: 0;
   left: 0;
-  z-index: 1;
+  z-index: 99;
 }
 
 .logo {
@@ -86,6 +87,106 @@ nav {
 
 .footer-lower {
   line-height: 1.5;
+}
+
+.products {
+  padding: 1rem;
+  
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.product-card:hover {
+  transform: scale(1.01);
+  cursor: pointer;
+}
+
+.badge-bestseller {
+  font-size: 0.75rem;
+}
+
+.card-image {
+  position: relative;
+}
+
+.product-rating {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  gap: 2px;
+  background-color: var(--primary-800);
+  color: var(--black-050);
+  padding: 4px 6px;
+  border-radius: 2px;
+  width: fit-content;
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0.5rem;
+}
+
+.product-rating i {
+  font-size: 0.9rem;
+}
+
+.product-card .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-title,
+.product-description {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.wishlist {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--red-500);
+}
+
+.product-price-description {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+}
+
+.product-price {
+  display: flex;
+  align-items: center;
+  color: var(--black-800);
+  font-size: 1.15rem;
+}
+
+.product-price i {
+  font-size: 1.15rem;
+}
+
+.product-sell-price {
+  font-size: 1rem;
+  color: var(--black-500);
+}
+
+.product-sell-price i {
+  font-size: 1rem;
+}
+
+.product-discount {
+  border: thin solid var(--primary-700);
+  color: var(--primary-700);
+  font-size: small;
+  padding: 0.25rem 0.5rem;
+}
+
+.product-discount i {
+  font-size: small;
 }
 
 @media screen and (max-width: 600px) {
