@@ -22,18 +22,28 @@
                 <a href="/" class="btn-link btn-link-primary signup-auth">Signup</a>
             </h2>
             <form class="form-auth my-3 txt-left">
-                <div class="input-group auth-username">
-                    <label class="input-label" for="emailID">Email ID<sup>*</sup></label>
+                <div class="input-group auth-input-group">
+                    <label class="input-label py-1 py-1" for="firstName">First Name<sup>*</sup></label>
+                    <input class="input-outline" type="text" autocomplete="off" name="firstName"
+                        placeholder="John" id="firstName" required>
+                </div>
+                <div class="input-group auth-input-group">
+                    <label class="input-label py-1" for="lastName">Last Name<sup>*</sup></label>
+                    <input class="input-outline" type="text" autocomplete="off" name="lastName"
+                        placeholder="Doe" id="lastName" required>
+                </div>
+                <div class="input-group auth-input-group">
+                    <label class="input-label py-1" for="emailID">Email ID<sup>*</sup></label>
                     <input class="input-outline w-100" type="email" autocomplete="off" name="emailID"
                         placeholder="delicious_desserts@email.com" id="emailID" required>
                 </div>
-                <div class="input-group auth-password">
-                    <label class="input-label" for="password">Password<sup>*</sup></label>
+                <div class="input-group auth-input-group">
+                    <label class="input-label py-1" for="password">Password<sup>*</sup></label>
                     <input class="input-outline w-100" type="password" name="password" placeholder="*******"
                         id="password" required>
                 </div>
-                <div class="input-group auth-password">
-                    <label class="input-label" for="confirm-password">Confirm Password<sup>*</sup></label>
+                <div class="input-group auth-input-group">
+                    <label class="input-label py-1" for="confirm-password">Confirm Password<sup>*</sup></label>
                     <input class="input-outline w-100" type="password" name="confirm-password" placeholder="*******"
                         id="confirm-password" required>
                 </div>
