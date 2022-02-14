@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://rocket-ui.vercel.app/css/main.css" />
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../css/login_signup.css">
+    <title>The Cakery | Login</title>
+</head>
+
+<body>
+    <!-- login page -->
+    <div class="auth-window dialog-window">
+        <button class="btn-icon material-icons btn-close-page">clear</button>
+        <div class="dialog-box">
+            <h2 class="dialog-header heading h2 heading-auth">
+                <a href="/" class="btn-link btn-link-primary login-auth">Login</a> /
+                <a href="../pages/signup.html" class="btn-link btn-link-basic signup-auth">Signup</a>
+            </h2>
+            <form class="form-auth my-3 txt-left">
+                <div class="input-group auth-input-group">
+                    <label class="input-label py-1" for="emailID">Email ID<sup>*</sup></label>
+                    <input class="input-outline w-100" type="email" autocomplete="off" name="emailID"
+                        placeholder="delicious_desserts@email.com" id="emailID" required>
+                </div>
+                <div class="input-group auth-input-group">
+                    <label class="input-label py-1" for="password">Password<sup>*</sup></label>
+                    <input class="input-outline w-100" type="password" name="password" placeholder="*******" id="password"
+                        required>
+                </div>
+
+                <button class="btn-basic btn-primary btn-auth my-3">Login</button>
+
+            </form>
+            <div class="card-footer">
+                <div class="action-button">
+                    <a href="" class="btn-link btn-link-basic">FORGOT PASSWORD?</a>
+                </div>
+                <div class="action-icons">
+                    NEW USER? <a href="../pages/signup.html" class="btn-link btn-link-primary txt-bold">REGISTER</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
