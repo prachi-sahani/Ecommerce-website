@@ -17,8 +17,8 @@
 }
 
 .product-card .btn-close{
-    top: 0.25rem;
-    right: 0.25rem;
+    top: 4px;
+    right: 4px;
 }
 
 .product-card .overlay, .product-card .btn-close{
