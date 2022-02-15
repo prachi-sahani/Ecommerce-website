@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://rocket-ui.vercel.app/css/main.css" />
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../css/cart-management.css">
+    <title>The Cakery | Cart</title>
+</head>
+
+<body>
+    <!-- navigation -->
+    <nav>
+        <div class="navbar">
+            <img class="navbar-brand logo" src="../assets/logo.png" alt="Cakery"></img>
+            <div class="navbar-nav">
+                <ul class="list-group-inline navbar-nav-list">
+                    <li class="list-item"><a href="../index.html">Home</a></li>
+                    <li class="list-item"><a href="../pages/product-page.html">Order Now</a></li>
+                </ul>
+                <div class="navbar-action">
+                    <div class="badge badge-icon-md">
+                        <a href="../pages/wishlist-page.html"
+                            class="btn-link btn-icon btn-outline-primary material-icons">favorite</a>
+                        <div class="badge-icon-text badge-count">14</div>
+                    </div>
+                    <div class="badge badge-icon-md">
+                        <a href="../pages/cart-management.html"
+                            class="btn-link btn-icon btn-outline-primary material-icons">shopping_cart</a>
+                        <div class="badge-icon-text badge-count">4</div>
+                    </div>
+                    <a href="" class="btn-icon btn-outline-primary material-icons">account_circle</a>
+                    <a href="../index.html" class="btn-basic btn-primary btn-sm">LOGOUT</a>
+                </div>
+            </div>
+            <div class="navbar-menu">
+                <button class="navbar-menu-btn btn-basic btn-outline-primary material-icons btn-md">menu</button>
+                <ul class="navbar-menu-list list-group-stacked">
+                    <li class="list-item"><a href="./product-page.html">Logout </a></li>
+                    <li class="list-item"><a href="./product-page.html">Account</a></li>
+                    <li class="list-item"><a href="./product-page.html">Shopping Bag</a></li>
+                    <li class="list-item"><a href="./product-page.html">Wishlist</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- cart management -->
+    <main class="cart-management">
+        <div class="cart-products-list p-2">
+            <p class="txt txt-bold txt-gray txt-md px-3">My Cart (3)</p>
+            <div class="card card-hz">
+                <img class="card-img" src="../assets/product-red-velvet-cake.jpg"></img>
+                <div class="card-container">
+                    <div class="card-header">
+                        <div class="card-title">Red Velvet Cake</div>
+                        <div class="card-subtitle"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="product-price-description">
+                            <div class="product-price product-discount-price">
+                                <i class="material-icons">currency_rupee</i>649
+                            </div>
+                            <div class="product-price product-sell-price">
+                                <i class="material-icons">currency_rupee</i><s>699</s>
+                            </div>
+                            <div class="product-price product-discount">
+                                <i class="material-icons">currency_rupee</i>50 off
+                            </div>
+                        </div>
+                        <div class="qty-changer pt-2">
+                            <button class="btn-icon material-icons qty-decrease" disabled>remove_circle_outline</button>
+                            <div class="qty">1</div>
+                            <button class="btn-icon material-icons qty-increase">add_circle_outline</button>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="action-button">
+                            <button class="btn-basic btn-outline-primary btn-sm">Move to
+                                wishlist</button>
+                            <button class="btn-basic btn-outline-basic btn-sm">Remove</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-hz">
+                <img class="card-img" src="../assets/category-jar-cake.jpg"></img>
+                <div class="card-container">
+                    <div class="card-header">
+                        <div class="card-title">Red Velvet Jar Cake</div>
+                        <div class="card-subtitle"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="product-price-description">
+                            <div class="product-price product-discount-price">
+                                <i class="material-icons">currency_rupee</i>149
+                            </div>
+                            <div class="product-price product-sell-price">
+                                <i class="material-icons">currency_rupee</i><s>199</s>
+                            </div>
+                            <div class="product-price product-discount">
+                                <i class="material-icons">currency_rupee</i>50 off
+                            </div>
+                        </div>
+                        <div class="qty-changer pt-2">
+                            <button class="btn-icon material-icons qty-decrease" disabled>remove_circle_outline</button>
+                            <div class="qty">2</div>
+                            <button class="btn-icon material-icons qty-increase">add_circle_outline</button>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="action-button">
+                            <button class="btn-basic btn-outline-primary btn-sm">Move to
+                                wishlist</button>
+                            <button class="btn-basic btn-outline-basic btn-sm">Remove</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cart-value-details p-2">
+            <div class="card card-basic">
+                <div class="card-header">
+                    <h3 class="txt txt-bold txt-md txt-gray">Price Details</h3>
+                    <hr>
+                </div>
+                <div class="card-content">
+                    <div class="price-details">
+                        <p class="txt">Price(3 items)</p>
+                        <p class="pricing txt txt-left"><i class="material-icons">currency_rupee</i>1097</p>
+                    </div>
+                    <div class="price-details">
+                        <p class="txt">Discount</p>
+                        <p class="pricing txt txt-left"><i class="material-icons">currency_rupee</i>150</p>
+                    </div>
+                    <div class="price-details">
+                        <p class="txt">Delivery Charges</p>
+                        <p class="pricing txt txt-left"><i class="material-icons">currency_rupee</i>50</p>
+                    </div>
+                    <hr>
+                    <div class="price-details">
+                        <p class="txt txt-bold txt-md">Total Price</p>
+                        <p class="pricing txt txt-left"><i class="material-icons">currency_rupee</i>997</p>
+                    </div>
+                    <hr class="txt-gray">
+                </div>
+                <div class="card-footer ">
+                    <a href="" class="btn-place-order btn-basic btn-w-icon btn-primary"><i
+                            class="material-icons">local_shipping</i> Place Order</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer mt-4">
+        <div class="footer-upper">
+            <ul class="footer-quick-links list-group txt-left">
+                <h4 class="headings h4">Quick Links</h4>
+                <li class="list-item"><a href="../index.html">Home</a></li>
+                <li class="list-item"><a href="">Cancellation & Refund Policy</a></li>
+                <li class="list-item"><a href="">Terms & Conditions</a></li>
+            </ul>
+            <ul class="footer-contact-links list-group txt-left">
+                <h4 class="headings h4">Get in touch</h4>
+                <li class="list-item"><i class="material-icons txt-bold txt-md pr-2">phone</i><a
+                        href="tel:9999999999">(+91)
+                        9999999999</a></li>
+                <li class="list-item"><i class="material-icons pr-2">mail_outline</i><a
+                        href="mailto:support@cakery.com">support@cakery.com</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-lower mt-4 txt-sm">
+            &copy; 2022 <strong>The Cakery</strong>. All rights reserved. Designed by <strong>Prachi Sahani</strong>
+        </div>
+    </footer>
+</body>
+
+</html>
