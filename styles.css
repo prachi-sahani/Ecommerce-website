@@ -39,6 +39,10 @@ nav {
   z-index: 99;
 }
 
+.w-100{
+  width: 100%;
+}
+
 .logo {
   height: 7rem;
 }
@@ -51,6 +55,12 @@ nav {
 /* visible for screens below 600px */
 .navbar-menu-list {
   display: none;
+}
+
+.badge-count{
+  background-color: var(--black-500);
+  bottom: 55%;
+  left: 60%;
 }
 
 .footer {
@@ -91,7 +101,6 @@ nav {
 
 .products {
   padding: 1rem;
-  
 }
 
 .product-list {
@@ -179,7 +188,7 @@ nav {
 }
 
 .product-discount {
-  border: thin solid var(--primary-700);
+  /* border: thin solid var(--primary-700); */
   color: var(--primary-700);
   font-size: small;
   padding: 0.25rem 0.5rem;

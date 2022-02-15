@@ -1,11 +1,5 @@
-.wishlist-count{
-    background-color: var(--black-500);
-    bottom: 55%;
-    left: 60%;
-}
-
 .wishlist-page{
-    min-height: calc(100vh - 20rem);
+    min-height: calc(100vh - 21.5rem);
 }
 
 .txt-my-wishlist{
